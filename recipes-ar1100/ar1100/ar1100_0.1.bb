@@ -14,7 +14,7 @@ PACKAGECONFIG ??= ""
 #PACKAGECONFIG[pcre] = "--enable-pcre,--disable-pcre,libpcre"
 
 SRC_URI = "git://github.com/reworled/ar1100.git;branch=master;protocol=git"
-SRCREV = "72112068fe06193960223a608aa2d26d4f872252"
+SRCREV = "b5fec96ce5ef7e7ac8f7f7e47195fbf86632df51"
 SRC_URI[md5sum] = "3fd7ad10dd2984ef01c95af5832ba2b1"
 
 FILES_${PN} += "/opt/AR1100/bin/AR1100"
