@@ -11,10 +11,9 @@ inherit cmake pkgconfig
 OECMAKE_GENERATOR = "Unix Makefiles"
 
 PACKAGECONFIG ??= ""
-#PACKAGECONFIG[pcre] = "--enable-pcre,--disable-pcre,libpcre"
 
 SRC_URI = "git://github.com/reworled/ar1100.git;branch=master;protocol=git"
-SRCREV = "4e0c2bf6a263ab23755a64321eee1d840d99b577"
+SRCREV = "e2a41dd74bcc1b503fdf98b1266495f8d3989526"
 SRC_URI[md5sum] = "3fd7ad10dd2984ef01c95af5832ba2b1"
 
 FILES_${PN} += "/opt/AR1100/bin/AR1100"
@@ -22,5 +21,4 @@ FILES_${PN} += "/opt/AR1100/bin/AR1100"
 do_compile () {
     oe_runmake all
 }
-
 
